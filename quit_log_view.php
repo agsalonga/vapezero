@@ -63,21 +63,26 @@ $stmt->bind_result($date, $reason, $mood, $challenge, $reflection);
         }
 
         .entry {
-            background:rgb(18, 213, 161);
-            border-left: 5px solid #2e8b57;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-        }
+    background: #ffffff; /* White background for entry */
+    border-left: 5px solid #2e8b57;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    color: #333; /* dark text for good readability */
+    font-family: Arial, sans-serif; /* readable font for entries */
+    line-height: 1.6; /* better line spacing */
+}
 
-        .entry strong {
-            color: #333;
-        }
+.entry strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #2d4c00; /* dark green for strong tags */
+}
 
-        .entry em {
-            color: #555;
-        }
+.entry em {
+    color: #4CAF50;
+}
 
         h2 {
             text-align: center;
