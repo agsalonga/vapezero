@@ -35,7 +35,7 @@ $stmt->bind_result($date, $reason, $mood, $challenge, $reflection);
         .sidebar {
             width: 220px;
             height: 100vh;
-            background: #e9ffd6; /* Changed to a new green color */
+            background: #2d4c00; /* Changed to a new green color */
             color: white;
             position: fixed;
             padding-top: 20px;
@@ -63,7 +63,7 @@ $stmt->bind_result($date, $reason, $mood, $challenge, $reflection);
         }
 
         .entry {
-            background: #f9f9f9;
+            background:rgb(18, 213, 161);
             border-left: 5px solid #2e8b57;
             padding: 20px;
             margin-bottom: 20px;

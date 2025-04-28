@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             align-items: center;
         }
         .login-container {
-            background: #e9ffd6; /* Updated container color */
+            background: #2d4c00; /* Updated container color */
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0px 4px 20px rgba(0,0,0,0.3);

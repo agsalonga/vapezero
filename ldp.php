@@ -15,15 +15,15 @@
 
         /* Body */
         body {
-            font-family: 'Amatic SC', cursive;
-            background-color: #e9ffd6;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden; /* Prevent scrolling during animation */
-        }
+    font-family: 'Amatic SC', cursive;
+    background-color: #2d4c00;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* use min-height instead of height */
+    overflow-x: hidden; /* allow vertical scroll, block side scroll only */
+}
 
         /* Logo Animation */
         .logo-animation {
@@ -44,19 +44,19 @@
 
         /* Hero Section */
         .hero {
-            background-color: #135a31;
-            width: 100%;
-            height: 100vh;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-image: url('vape-hero-image.jpg'); /* Replace with your hero image */
-            background-size: cover;
-            background-position: center;
-            color: white;
-        }
+    width: 100%;
+    min-height: 100vh; /* min-height para at least full screen, pero allow scroll */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('vape-hero-image.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px 50px 20px; /* Added padding para safe spacing */
+}
 
         .hero h1 {
             font-size: 50px;
@@ -84,7 +84,7 @@
 
         /* About Section */
         .about {
-            background-color: #e9ffd6;
+            background-color: #f0f8f5;
             width: 100%;
             padding: 50px 0;
             text-align: center;
@@ -149,17 +149,17 @@
     <script>
         // JavaScript to trigger the fade-out effect and reveal the main content
         window.onload = () => {
-            // Set a delay for the logo animation
-            setTimeout(() => {
-                document.querySelector('.logo-animation').style.opacity = '0'; // Fade out the logo
-            }, 1000); // Delay for 1 second before starting the fade-out animation
+    setTimeout(() => {
+        document.querySelector('.logo-animation').style.opacity = '0';
+    }, 1000);
 
-            // Reveal the main content after the fade-out
-            setTimeout(() => {
-                document.querySelector('.main-content').style.opacity = '1';
-                document.querySelector('.main-content').style.visibility = 'visible';
-            }, 4000); // Reveal after the logo fades out (3 seconds)
-        }
+    setTimeout(() => {
+        document.querySelector('.main-content').style.opacity = '1';
+        document.querySelector('.main-content').style.visibility = 'visible';
+        document.body.style.overflowY = 'auto'; // ✅ allow scroll after animation
+    }, 4000);
+}
+
     </script>
 
 </body>

@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             align-items: center;
         }
         .signup-container {
-            background: #e9ffd6;
+            background: #2d4c00;
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
